@@ -15,6 +15,7 @@ import mv from "./commands/mv.js";
 import remove from "./commands/rm.js";
 import rn from "./commands/rn.js";
 import up from "./commands/up.js";
+import os from "./commands/os.js";
 
 const commandsList = {
   ".exit": exit,
@@ -33,7 +34,8 @@ const commandsList = {
   mv: mv,
   rm: remove,
   rn: rn,
-  up: up,  
+  up: up,
+  os: os,
 };
 
 const isKnownCommand = (command) => {
