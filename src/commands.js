@@ -11,6 +11,9 @@ import compress from "./commands/compress.js";
 import decompress from "./commands/decompress.js";
 import hash from "./commands/hash.js";
 import ls from "./commands/ls.js";
+import mv from "./commands/mv.js";
+import remove from "./commands/rm.js";
+import rn from "./commands/rn.js";
 
 const commandsList = {
   ".exit": exit,
@@ -26,6 +29,9 @@ const commandsList = {
   decompress: decompress,
   hash: hash,
   ls: ls,
+  mv: mv,
+  rm: remove,
+  rn: rn,
 };
 
 const isKnownCommand = (command) => {
