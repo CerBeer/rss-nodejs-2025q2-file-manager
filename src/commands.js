@@ -4,6 +4,9 @@ import help from "./commands/help.js";
 import exit from "./commands/exit.js";
 import man from "./commands/man.js";
 import add from "./commands/add.js";
+import cat from "./commands/cat.js";
+import cd from "./commands/cd.js";
+import cp from "./commands/cp.js";
 
 const commandsList = {
   ".exit": exit,
@@ -12,6 +15,9 @@ const commandsList = {
   man: man,
   help: help,
   add: add,
+  cat: cat,
+  cd: cd,
+  cp: cp,
 };
 
 const isKnownCommand = (command) => {
