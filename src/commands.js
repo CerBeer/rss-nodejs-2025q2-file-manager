@@ -3,6 +3,7 @@ import about from "./commands/about.js";
 import help from "./commands/help.js";
 import exit from "./commands/exit.js";
 import man from "./commands/man.js";
+import add from "./commands/add.js";
 
 const commandsList = {
   ".exit": exit,
@@ -10,6 +11,7 @@ const commandsList = {
   about: about,
   man: man,
   help: help,
+  add: add,
 };
 
 const isKnownCommand = (command) => {
