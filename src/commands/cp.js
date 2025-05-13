@@ -10,7 +10,6 @@ const func = async (params, env) => {
   const source = resolve(params[0]);
   const { base } = parse(source);
   const destination = resolve(params[1], base);
-  console.log(source, base, params[1], destination);
   if (source === destination) return env.messages.InvalidParameters;
 
   try {

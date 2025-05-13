@@ -7,6 +7,7 @@ import add from "./commands/add.js";
 import cat from "./commands/cat.js";
 import cd from "./commands/cd.js";
 import cp from "./commands/cp.js";
+import mkdir from "./commands/mkdir.js";
 import compress from "./commands/compress.js";
 import decompress from "./commands/decompress.js";
 import hash from "./commands/hash.js";
@@ -27,6 +28,7 @@ const commandsList = {
   cat: cat,
   cd: cd,
   cp: cp,
+  mkdir: mkdir,
   compress: compress,
   decompress: decompress,
   hash: hash,

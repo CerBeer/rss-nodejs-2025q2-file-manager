@@ -22,8 +22,8 @@ const func = async (params, env) => {
     const read = createReadStream(source);
     const write = createWriteStream(destination);
 
-    const pipelinePromis = util.promisify(pipeline);
-    await pipelinePromis(read, createBrotliCompress(), write);
+    const pipelinePromise = util.promisify(pipeline);
+    await pipelinePromise(read, createBrotliCompress(), write);
     return env.messages.OperationSuccessful;
   } catch (err) {
     return env.messages.OperationFailedWithError(err);
